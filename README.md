@@ -1,2 +1,0 @@
-# catandbugjoy
-Catandbugjoy Blog

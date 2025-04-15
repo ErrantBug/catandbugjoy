@@ -1,0 +1,5 @@
+# 忽略 WordPress 動態檔案
+wp-includes/
+wp-admin/
+wp-content/
+*.php
