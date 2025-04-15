@@ -3,3 +3,7 @@ wp-includes/
 wp-admin/
 wp-content/
 *.php
+
+# 允許 dist 目錄中的佈景主題和上傳檔案
+!dist/wp-content/themes/
+!dist/wp-content/uploads/
