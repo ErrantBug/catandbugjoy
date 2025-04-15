@@ -1,9 +1,9 @@
-# 忽略 WordPress 動態檔案
-wp-includes/
-wp-admin/
-wp-content/
+# 忽略 WordPress 動態檔案（根目錄下的動態檔案）
+/wp-includes/
+/wp-admin/
+/wp-content/
 *.php
 
-# 允許 dist 目錄中的佈景主題和上傳檔案
-!dist/wp-content/themes/
-!dist/wp-content/uploads/
+# 允許 dist 目錄中的靜態檔案
+!dist/wp-content/
+!dist/wp-includes/
