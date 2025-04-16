@@ -10,24 +10,27 @@
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	
 	<!-- This site is optimized with the Yoast SEO plugin v24.9 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>ComfyUI 的 “fill_empty_deterministic_&quot; not implemented for &#039;Float8_e4m3fn 錯誤, 顯卡問題還是模型問題？Flux？StableDiffusion｜貓與蟲2025 - 貓與蟲的遊記生活</title>
+	<title>How to fix “fill_empty_deterministic_&quot; not implemented for &#039;Float8_e4m3fn in ComfyUI? 是顯卡還是模型問題？Flux？StableDiffusion｜貓與蟲2025 - 貓與蟲的遊記生活</title>
 	<meta name="description" content="關鍵在檢查你的顯示卡支不支援你所選用的模型(checkpoints)，例如 RTX 3060 Ti 並不支援 fp16 的模型。">
 	<link rel="canonical" href="https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/">
 	<meta property="og:locale" content="zh_TW">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="ComfyUI 的 “fill_empty_deterministic_&quot; not implemented for &#039;Float8_e4m3fn 錯誤, 顯卡問題還是模型問題？Flux？StableDiffusion｜貓與蟲2025 - 貓與蟲的遊記生活">
+	<meta property="og:title" content="How to fix “fill_empty_deterministic_&quot; not implemented for &#039;Float8_e4m3fn in ComfyUI? 是顯卡還是模型問題？Flux？StableDiffusion｜貓與蟲2025 - 貓與蟲的遊記生活">
 	<meta property="og:description" content="關鍵在檢查你的顯示卡支不支援你所選用的模型(checkpoints)，例如 RTX 3060 Ti 並不支援 fp16 的模型。">
 	<meta property="og:url" content="https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/">
 	<meta property="og:site_name" content="貓與蟲的遊記生活">
 	<meta property="article:published_time" content="2025-04-15T14:22:23+00:00">
-	<meta property="article:modified_time" content="2025-04-15T16:22:30+00:00">
+	<meta property="article:modified_time" content="2025-04-15T23:49:26+00:00">
 	<meta property="og:image" content="https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png">
+	<meta property="og:image:width" content="599">
+	<meta property="og:image:height" content="436">
+	<meta property="og:image:type" content="image/png">
 	<meta name="author" content="CatandBug">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:label1" content="作者:">
 	<meta name="twitter:data1" content="CatandBug">
 	<meta name="twitter:label2" content="預估閱讀時間">
-	<meta name="twitter:data2" content="2 分鐘">
+	<meta name="twitter:data2" content="3 分鐘">
 	<script type="application/ld+json" class="yoast-schema-graph">{
 	    "@context": "https://schema.org",
 	    "@graph": [
@@ -44,13 +47,13 @@
 	                "name": "CatandBug",
 	                "@id": "https://catandbugjoy.pages.dev/#/schema/person/d62e43281dff26574195f7f1226c93c2"
 	            },
-	            "headline": "ComfyUI 的 “fill_empty_deterministic_” not implemented for ‘Float8_e4m3fn 錯誤, 顯卡問題還是模型問題？Flux？StableDiffusion｜貓與蟲2025",
+	            "headline": "How to fix “fill_empty_deterministic_” not implemented for ‘Float8_e4m3fn in ComfyUI? 是顯卡還是模型問題？Flux？StableDiffusion｜貓與蟲2025",
 	            "datePublished": "2025-04-15T14:22:23+00:00",
-	            "dateModified": "2025-04-15T16:22:30+00:00",
+	            "dateModified": "2025-04-15T23:49:26+00:00",
 	            "mainEntityOfPage": {
 	                "@id": "https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/"
 	            },
-	            "wordCount": 158,
+	            "wordCount": 398,
 	            "commentCount": 0,
 	            "publisher": {
 	                "@id": "https://catandbugjoy.pages.dev/#/schema/person/d62e43281dff26574195f7f1226c93c2"
@@ -66,6 +69,7 @@
 	                "顯示卡"
 	            ],
 	            "articleSection": [
+	                "HowTo",
 	                "Note"
 	            ],
 	            "inLanguage": "zh-TW",
@@ -83,7 +87,7 @@
 	            "@type": "WebPage",
 	            "@id": "https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/",
 	            "url": "https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/",
-	            "name": "ComfyUI 的 “fill_empty_deterministic_\" not implemented for 'Float8_e4m3fn 錯誤, 顯卡問題還是模型問題？Flux？StableDiffusion｜貓與蟲2025 - 貓與蟲的遊記生活",
+	            "name": "How to fix “fill_empty_deterministic_\" not implemented for 'Float8_e4m3fn in ComfyUI? 是顯卡還是模型問題？Flux？StableDiffusion｜貓與蟲2025 - 貓與蟲的遊記生活",
 	            "isPartOf": {
 	                "@id": "https://catandbugjoy.pages.dev/#website"
 	            },
@@ -95,7 +99,7 @@
 	            },
 	            "thumbnailUrl": "https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png",
 	            "datePublished": "2025-04-15T14:22:23+00:00",
-	            "dateModified": "2025-04-15T16:22:30+00:00",
+	            "dateModified": "2025-04-15T23:49:26+00:00",
 	            "description": "關鍵在檢查你的顯示卡支不支援你所選用的模型(checkpoints)，例如 RTX 3060 Ti 並不支援 fp16 的模型。",
 	            "breadcrumb": {
 	                "@id": "https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/#breadcrumb"
@@ -117,7 +121,8 @@
 	            "url": "https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png",
 	            "contentUrl": "https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png",
 	            "width": 599,
-	            "height": 436
+	            "height": 436,
+	            "caption": "fill_empty_deterministic_\" not implemented for 'Float8_e4m3fn"
 	        },
 	        {
 	            "@type": "BreadcrumbList",
@@ -132,7 +137,7 @@
 	                {
 	                    "@type": "ListItem",
 	                    "position": 2,
-	                    "name": "ComfyUI 的 “fill_empty_deterministic_” not implemented for ‘Float8_e4m3fn 錯誤, 顯卡問題還是模型問題？Flux？StableDiffusion｜貓與蟲2025"
+	                    "name": "How to fix “fill_empty_deterministic_” not implemented for ‘Float8_e4m3fn in ComfyUI? 是顯卡還是模型問題？Flux？StableDiffusion｜貓與蟲2025"
 	                }
 	            ]
 	        },
@@ -193,7 +198,7 @@
 
 <link rel="alternate" type="application/rss+xml" title="訂閱《貓與蟲的遊記生活》&raquo; 資訊提供" href="https://catandbugjoy.pages.dev/feed/">
 <link rel="alternate" type="application/rss+xml" title="訂閱《貓與蟲的遊記生活》&raquo; 留言的資訊提供" href="https://catandbugjoy.pages.dev/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="訂閱《貓與蟲的遊記生活 》&raquo;〈ComfyUI 的 “fill_empty_deterministic_&#8221; not implemented for &#8216;Float8_e4m3fn 錯誤, 顯卡問題還是模型問題？Flux？StableDiffusion｜貓與蟲2025〉留言的資訊提供" href="https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/feed/">
+<link rel="alternate" type="application/rss+xml" title="訂閱《貓與蟲的遊記生活 》&raquo;〈How to fix “fill_empty_deterministic_&#8221; not implemented for &#8216;Float8_e4m3fn in ComfyUI? 是顯卡還是模型問題？Flux？StableDiffusion｜貓與蟲2025〉留言的資訊提供" href="https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/feed/">
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/catandbugjoy.pages.dev\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
 /*! This file is auto-generated */
@@ -275,14 +280,27 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		
-<article id="post-10" class="post-10 post type-post status-publish format-aside hentry category-note tag-ai tag-comfyui tag-note tag-7 post_format-post-format-aside">
+<article id="post-10" class="post-10 post type-post status-publish format-aside has-post-thumbnail hentry category-howto category-note tag-ai tag-comfyui tag-note tag-7 post_format-post-format-aside">
 	<header class="entry-header">
-		<h1 class="entry-title">ComfyUI 的 “fill_empty_deterministic_&#8221; not implemented for &#8216;Float8_e4m3fn 錯誤, 顯卡問題還是模型問題？Flux？StableDiffusion｜貓與蟲2025</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">How to fix “fill_empty_deterministic_&#8221; not implemented for &#8216;Float8_e4m3fn in ComfyUI? 是顯卡還是模型問題？Flux？StableDiffusion｜貓與蟲2025</h1>	</header><!-- .entry-header -->
 
+				<div class="entry-summary">
+				<p>fill_empty_deterministic_&#8221; not implemented for &#8216;Float8_e4m3fn</p>
+			</div>
+<!-- .entry-summary -->
+			
 	
+		<div class="post-thumbnail">
+			<img width="599" height="436" src="https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="fill_empty_deterministic_&quot; not implemented for &#039;Float8_e4m3fn" decoding="async" fetchpriority="high" srcset="https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png 599w, https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1-300x218.png 300w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 60vw, (max-width: 1362px) 62vw, 840px">	</div>
+<!-- .post-thumbnail -->
+
 	
 	<div class="entry-content">
 		
+<p>First, check what type of model you&#8217;re using, then check your GPU.</p>
+
+
+
 <p>小夥伴們在使用 ComfyUI 的時候，有沒有遇到過 &#8220;fill_empty_deterministic_&#8221; not implemented for &#8216;Float8_e4m3fn&#8221; 的錯誤？</p>
 
 
@@ -296,7 +314,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 <div class="wp-block-media-text is-stacked-on-mobile" style="grid-template-columns:75% auto">
-<figure class="wp-block-media-text__media"><img fetchpriority="high" decoding="async" width="599" height="436" src="https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png" alt="" class="wp-image-37 size-full" srcset="https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png 599w, https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1-300x218.png 300w" sizes="(max-width: 599px) 85vw, 599px"></figure><div class="wp-block-media-text__content">
+<figure class="wp-block-media-text__media"><img decoding="async" width="599" height="436" src="https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png" alt="" class="wp-image-37 size-full" srcset="https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1.png 599w, https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-1-300x218.png 300w" sizes="(max-width: 599px) 85vw, 599px"></figure><div class="wp-block-media-text__content">
 <p class="has-small-font-size">Here&#8217;s the problem. Why baby why ?!</p>
 </div>
 </div>
@@ -311,7 +329,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 
-<p>　第二是檢查你的顯示卡，如果你是用是 Nvidia RTX 3060 Ti 的話，那問題就來了，這張消費級的顯示卡是沒辦法跑 fp8 的模型的！</p>
+<p>First, check if the model you&#8217;re using (usually a checkpoints model) is an FP8 quantized model — that&#8217;s an ultra low-precision floating point model.</p>
+
+
+
+<p>　第二是檢查你的顯示卡，如果你的顯卡是 Nvidia RTX 3060 Ti 的話，那問題就來了，這張消費級的顯示卡是沒辦法跑 fp8 的模型的！</p>
+
+
+
+<p>Next, check your graphics card. If it’s an Nvidia RTX 3060 Ti, that’s likely the issue — this consumer-level GPU can’t handle FP8 models.</p>
 
 
 
@@ -319,13 +345,25 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 
+<p>To fix that &#8216;fill_empty_deterministic_ not implemented for Float8_e4m3fn&#8217; error, you&#8217;ll need to use an FP16 model instead — the RTX 3060 Ti doesn’t support FP8.</p>
+
+
+
 <p>　所以在下載模型時，得先了解自己的硬體條件，再來選擇模型～雖然 fp8 模型容量比較小，但顯卡不支援也是沒轍～</p>
+
+
+
+<p>So when you&#8217;re downloading a model, you need to understand your hardware first before choosing one. FP8 models might be smaller in size, but if your GPU doesn&#8217;t support them, there&#8217;s just no way around it.&#8221;</p>
 
 
 
 <div class="wp-block-media-text is-stacked-on-mobile" style="grid-template-columns:71% auto">
 <figure class="wp-block-media-text__media"><img decoding="async" width="481" height="236" src="https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image.png" alt="" class="wp-image-34 size-full" srcset="https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image.png 481w, https://catandbugjoy.pages.dev/wp-content/uploads/2025/04/image-300x147.png 300w" sizes="(max-width: 481px) 85vw, 481px"></figure><div class="wp-block-media-text__content">
 <p class="has-small-font-size">這些都是模型檔 (.safetensors)，但要注意檔案名稱中的 &#8220;fp8&#8221;, &#8220;fp16&#8243;，這就是文中我所指的判斷依據。</p>
+
+
+
+<p class="has-small-font-size">Be sure to check the model file name carefully — it usually tells you important details, like whether it&#8217;s FP8 or FP16.</p>
 </div>
 </div>
 
@@ -367,7 +405,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 
-<p>   而即使 RTX 4090 是更新的 Ada Lovelace 架構，它的 Tensor Core 也主要針對 FP16 和 INT8 優化，並未明確支持 FP8（FP8 更多是為企業級 GPU 設計的特性）。</p>
+<p> &nbsp; 而即使 RTX 4090 是更新的 Ada Lovelace 架構，它的 Tensor Core 也主要針對 FP16 和 INT8 優化，並未明確支持 FP8（FP8 更多是為企業級 GPU 設計的特性）。</p>
 
 
 
@@ -437,22 +475,34 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 
-<h2 class="wp-block-heading">結論</h2>
+<h2 class="wp-block-heading">結論 Conclusion</h2>
 
 
 
 <ul class="wp-block-list">
-<li>「這是一個量化模型」，這句話指的多半是指模型被優化過，適於低功耗設備或加速推理。</li>
+<li>The error &#8216;fill_empty_deterministic_ not implemented for Float8_e4m3fn&#8217; in ComfyUI is caused by a mismatch between the model you&#8217;re using and your GPU.</li>
 
 
 
-<li>「量化模型」是指經過這樣處理的模型，通常更小、更快，但可能精度稍低。</li>
+<li>「這是一個量化模型」，這句話指的多半是指模型被優化過，適於低功耗設備或加速推理。
+<ul class="wp-block-list">
+<li>This is a quantized model&#8217; usually refers to a version of the model that&#8217;s been optimized for lower power consumption or faster inference performance.</li>
+</ul>
+</li>
+
+
+
+<li>「量化模型」是指經過這樣處理的模型，通常更小、更快，但可能精度稍低。
+<ul class="wp-block-list">
+<li>A quantized model refers to a model that has undergone this kind of processing — it’s usually smaller and faster, but may come with slightly reduced accuracy.</li>
+</ul>
+</li>
 </ul>
 	</div>
 <!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<span class="byline"><img alt="" src="https://secure.gravatar.com/avatar/99df37ab727bc823db3219325f640a54?s=49&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/99df37ab727bc823db3219325f640a54?s=98&#038;d=mm&#038;r=g 2x" class="avatar avatar-49 photo" height="49" width="49" decoding="async"><span class="screen-reader-text">作者 </span><span class="author vcard"><a class="url fn n" href="https://catandbugjoy.pages.dev/author/dreamro1224/">CatandBug</a></span></span><span class="posted-on"><span class="screen-reader-text">發佈日期: </span><a href="https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/" rel="bookmark"><time class="entry-date published" datetime="2025-04-15T22:22:23+08:00">2025 年 4 月 15 日</time><time class="updated" datetime="2025-04-16T00:22:30+08:00">2025 年 4 月 16 日</time></a></span><span class="entry-format"><span class="screen-reader-text">文章格式 </span><a href="https://catandbugjoy.pages.dev/type/aside/">記事</a></span><span class="cat-links"><span class="screen-reader-text">分類 </span><a href="https://catandbugjoy.pages.dev/category/note/" rel="category tag">Note</a></span><span class="tags-links"><span class="screen-reader-text">標籤 </span><a href="https://catandbugjoy.pages.dev/tag/ai/" rel="tag">AI</a>、<a href="https://catandbugjoy.pages.dev/tag/comfyui/" rel="tag">ComfyUI</a>、<a href="https://catandbugjoy.pages.dev/tag/note/" rel="tag">Note</a>、<a href="https://catandbugjoy.pages.dev/tag/%e9%a1%af%e7%a4%ba%e5%8d%a1/" rel="tag">顯示卡</a></span>			</footer><!-- .entry-footer -->
+		<span class="byline"><img alt="" src="https://secure.gravatar.com/avatar/99df37ab727bc823db3219325f640a54?s=49&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/99df37ab727bc823db3219325f640a54?s=98&#038;d=mm&#038;r=g 2x" class="avatar avatar-49 photo" height="49" width="49" loading="lazy" decoding="async"><span class="screen-reader-text">作者 </span><span class="author vcard"><a class="url fn n" href="https://catandbugjoy.pages.dev/author/dreamro1224/">CatandBug</a></span></span><span class="posted-on"><span class="screen-reader-text">發佈日期: </span><a href="https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/" rel="bookmark"><time class="entry-date published" datetime="2025-04-15T22:22:23+08:00">2025 年 4 月 15 日</time><time class="updated" datetime="2025-04-16T07:49:26+08:00">2025 年 4 月 16 日</time></a></span><span class="entry-format"><span class="screen-reader-text">文章格式 </span><a href="https://catandbugjoy.pages.dev/type/aside/">記事</a></span><span class="cat-links"><span class="screen-reader-text">分類 </span><a href="https://catandbugjoy.pages.dev/category/howto/" rel="category tag">HowTo</a>、<a href="https://catandbugjoy.pages.dev/category/note/" rel="category tag">Note</a></span><span class="tags-links"><span class="screen-reader-text">標籤 </span><a href="https://catandbugjoy.pages.dev/tag/ai/" rel="tag">AI</a>、<a href="https://catandbugjoy.pages.dev/tag/comfyui/" rel="tag">ComfyUI</a>、<a href="https://catandbugjoy.pages.dev/tag/note/" rel="tag">Note</a>、<a href="https://catandbugjoy.pages.dev/tag/%e9%a1%af%e7%a4%ba%e5%8d%a1/" rel="tag">顯示卡</a></span>			</footer><!-- .entry-footer -->
 </article><!-- #post-10 -->
 
 <div id="comments" class="comments-area">
@@ -492,11 +542,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </ul>
 </div></div></section><section id="block-6" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
 <h2 class="wp-block-heading">分類</h2>
-<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-8">
+<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-19">
+<a href="https://catandbugjoy.pages.dev/category/howto/">HowTo</a>
+</li>
+	<li class="cat-item cat-item-8">
 <a href="https://catandbugjoy.pages.dev/category/note/">Note</a>
 </li>
-	<li class="cat-item cat-item-1">
-<a href="https://catandbugjoy.pages.dev/category/uncategorized/">未分類</a>
+	<li class="cat-item cat-item-20">
+<a href="https://catandbugjoy.pages.dev/category/%e9%9b%9c%e8%ab%87/">雜談</a>
 </li>
 </ul>
 </div></div></section>		</div>
@@ -516,7 +569,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </form></section><section id="block-3" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
 <h2 class="wp-block-heading">近期文章</h2>
 <ul class="wp-block-latest-posts__list wp-block-latest-posts">
-<li><a class="wp-block-latest-posts__post-title" href="https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/">ComfyUI 的 “fill_empty_deterministic_&#8221; not implemented for &#8216;Float8_e4m3fn 錯誤, 顯卡問題還是模型問題？Flux？StableDiffusion｜貓與蟲2025</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://catandbugjoy.pages.dev/comfyui-note-float8_e4m3fn/">How to fix “fill_empty_deterministic_&#8221; not implemented for &#8216;Float8_e4m3fn in ComfyUI? 是顯卡還是模型問題？Flux？StableDiffusion｜貓與蟲2025</a></li>
 <li><a class="wp-block-latest-posts__post-title" href="https://catandbugjoy.pages.dev/welcome-and-meet-cat-and-bu/">貓與蟲？我們是誰？</a></li>
 </ul>
 </div></div></section><section id="block-4" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
